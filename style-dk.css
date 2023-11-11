@@ -1,0 +1,126 @@
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* navbar starts from here */
+
+.navlogo{
+    float: left;
+    
+   
+}
+.nav-header{
+    float: left;
+   
+}
+.nav-manu{
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+.nav-manu a{
+    background-color: transparent;
+    margin-top: 25px;
+}
+
+/* navbar ends from here */
+
+/* profile start from here */
+.profile-cont h1{
+    font-size:3rem; 
+}
+.profile-cont p{
+    font-size: 20px;
+}
+.top-icon{
+    
+   
+    right: 70px;
+    top: 30px;
+    transition: transform 2s 0.3s;
+
+}
+.top-icon:hover{
+    transform: rotate(360deg) ;
+    
+}
+.bottom-icon{
+ 
+    left: 70px;
+    top: 330px;
+    transition: transform 2s 0.3s;
+
+}
+.top-icon:hover{
+    transform: rotate(360deg) ;
+    
+}
+
+/* profile ends from here */
+
+/* <!-- about me start from here --> */
+.about-me{
+    background-color: rgb(79, 177, 207);
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    margin-top: 35px;
+}
+.about-me .ab{
+    width: 5%;
+}
+.about-profile { 
+    margin:0 200px 0 210px ;
+    margin-top: 80px;
+    width: 250px;
+    height: auto;
+}    
+.a-me-cont { 
+    text-align: left;
+    
+
+    
+}
+
+/* <!-- about me ends from here --> */
+
+/* contact-me section is blew */
+.achiev-cont{
+    padding-right: 50px;
+}
+.more-cont{
+    position: relative;
+    text-align: center;
+}
+.contact-links .btn{
+    margin: 3% 4%;
+}
+.more-cont .contact-links{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 160px;
+    transform: translate(-50%,-50%);
+}
+
+/* footer start from here */
+.footer{
+   
+}
+.footer a{
+    display: inline;
+    padding: 10px;
+}
+.footer-desc{
+    margin-top: 10px;
+}

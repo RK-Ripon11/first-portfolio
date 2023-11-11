@@ -1,0 +1,446 @@
+*{ 
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #0c6168;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    padding: 0 7%;
+    border: 1px solid black;
+}
+.navlogo{
+    margin-top: 5px;
+}
+.nav-header{
+
+}
+.nav-header h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+.nav-manu{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.nav-manu a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(14, 173, 120);
+    padding:  10px;
+    margin: 7px 5px;
+    border-radius: 100px;
+    
+
+}
+.nav-manu a:hover{
+    background-color: gray;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* for mobile */ 
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    clear: both;
+    content: '';
+    display: table;
+    
+}
+
+/* end of navbar */
+/* profile start from here */
+.profile{
+    position: relative;
+    padding: 10px;
+}
+.profile-cont h1{
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Satisfy', cursive;
+}
+.profile-cont p{
+    text-align: center;
+    color: brown;
+}
+.top-icon{
+    width:150px;
+    height: 150px;
+    border-radius: 40px;
+    position: absolute;
+    right: 10px;
+    transition: transform 2s 0.3s;
+
+}
+.top-icon:hover{
+    transform: rotate(360deg) ;
+
+    
+}
+.bottom-icon{
+    width:150px;
+    height: 150px;
+    border-radius: 40px;
+    position: absolute;
+    left: 10px;
+    
+    transition: transform 2s 0.3s;
+}
+.bottom-icon:hover{
+    transform: rotate(360deg) ;
+    
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* profile ends from here */
+
+/* <!-- about me start from here --> */
+.about-me{
+    background-color: rgb(79, 177, 207);
+    text-align: center;
+    padding: 10px;
+    margin-top: 145px;
+    color: aliceblue;
+}
+.about-me h2{
+    text-align: center;
+}
+
+.about-me .ab {
+    width: 20%;
+    text-align: center;
+    border: 5px dotted rgb(255, 255, 255);
+    border-bottom: none;
+}
+.about-profile img{
+    
+    width: 150px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.a-me-cont a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+.a-me-cont button{
+    background-color: gray;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.about-me::after{
+   clear: both;
+   display: table;
+   content: '';
+}
+
+
+
+
+/* <!-- about me ends from here --> */
+
+/* <!-- expreance & education start here --> */
+.professional-experience{
+
+    
+}
+
+.work-experience{
+
+}
+.work-experience .card{
+    background-color: rgb(179, 176, 176);
+    border-radius: 5px;
+    padding: 10px;
+    
+    height: 600px;
+    transition: 0.3s;
+}
+.work-experience .card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+.card-icon {
+    text-align: center;
+    margin-top: 30px;
+  
+}
+.card-icon img{
+    width: 100px; 
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    
+
+}
+
+.work-experience h2{
+    background-color: #0c6168;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.work-experience .card::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* education card start here */
+.education .card{
+    background-color: rgb(179, 176, 176);
+    border-radius: 5px;
+    padding: 10px;
+    
+    height: 600px;
+    transition: 0.3s;
+}
+.education .card:hover{
+    box-shadow: 0 4px 8px 5px rgb(214, 73, 73);
+}
+.education h2{
+    background-color: #0c6168;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.education .card::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* skill start here */
+
+.skill .card{
+    background-color: rgb(179, 176, 176);
+    border-radius: 5px;
+    padding: 10px;
+    
+    height: 600px;
+    transition: 0.3s;
+}
+.skill .card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+.skill-title h2{
+    background-color: #0c6168;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.skill-desc li{
+    list-style-type: none;
+    color: aliceblue;
+    position: relative;
+    margin: 50px 0;
+}
+.skill-desc li::before{
+    content: '';
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    background-color: aliceblue;
+    top: calc(100% + 5px);
+    border-radius: 100px;
+    left: 0;
+}
+.skill-desc li::after{
+    content: '';
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    background-color: aliceblue;
+    top: calc(100% + 5px);
+    border-radius: 100px;
+    left: 0;
+    width: 0;
+    animation-duration:4s ;
+    animation-delay: 0.5s;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+    animation-iteration-count:1;
+
+}
+.skill-desc li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 90%;
+        background-color: blue;
+    }
+}
+.skill-desc li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width: 80%;
+        background-color: rgb(16, 158, 163);
+    }
+}
+.skill-desc li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    to{
+        width: 70%;
+        background-color: rgb(5, 145, 98);
+    }
+}
+.skill-desc li.php::after{
+    animation-name: php;
+}
+@keyframes php {
+    to{
+        width: 85%;
+        background-color: rgb(227, 241, 21);
+    }
+}
+.skill-desc li.sql::after{
+    animation-name: mys;
+}
+@keyframes mys {
+    to{
+        width: 85%;
+        background-color: rgb(216, 120, 11);
+    }
+}
+.skill .card::after{
+    clear: both;
+    display: table;
+    content: '';
+} 
+.professional-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+    
+}
+
+/* expreance & education ends here */
+
+
+/* CONTACT ME section start form here */
+.contact-me{
+    background-color: rgb(109, 156, 201);
+    padding: 1% 7%;
+    color: aliceblue;
+   
+}
+.contact-me h2{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.achiev-cont{
+    text-align: left;
+
+}
+.cm{
+    width: 20%;
+    text-align: center;
+    border: 5px dotted rgb(255, 255, 255);
+    border-bottom: none;
+}
+.contact{
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    text-align: center;
+    
+}
+.contact button{
+    border: none;
+    padding: 10px;
+    background-color: rgb(77, 71, 71);
+    border-radius: 15px;
+    color: white;
+    margin: 10px;
+}
+.contact-links {
+    text-align: center;
+}
+.contact-links .btn{
+   border: none;
+   border-radius: 15px;
+   font-size: 32px;
+   padding: 5px;
+   width: 60px;
+   cursor: pointer;
+   
+}
+.contact-links .btn:hover{
+    background-color: gray;
+}
+
+.contact-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* CONTACT ME section ends here */
+
+/* footer start from here */
+.footer{
+    background-color: rgb(0, 0, 0);
+   
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    
+}
+.footing-menu{
+    display: block;
+}
+.footer a{
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+.footer a:hover{
+    background-color: rgb(27, 20, 20);
+    
+}
+.footer::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* footer ends here */
+
+
